@@ -1,0 +1,62 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Mis Visualizaciones</title>
+</head>
+
+<body>
+
+  <h1>Visualizaciones de mis datos musicales</h1>
+
+  <!-- ===================== -->
+  <!--      FLOURISH         -->
+  <!-- ===================== -->
+  <h2>¿Cuántos minutos escuché cada banda?</h2>
+
+  <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/26588087">
+    <script src="https://public.flourish.studio/resources/embed.js"></script>
+    <noscript>
+      <img src="https://public.flourish.studio/visualisation/26588087/thumbnail"
+           width="100%" 
+           alt="bar-chart-race visualization" />
+    </noscript>
+  </div>
+
+  <!-- ===================== -->
+  <!--     DATAWRAPPER       -->
+  <!-- ===================== -->
+  <h2>¿Cuál fue mi promedio durante estos días escuchando música?</h2>
+
+  <iframe 
+      title="Relación entre tiempo transcurrido y minutos de escucha"
+      aria-label="Scatter Plot"
+      id="datawrapper-chart-ePneY"
+      src="https://datawrapper.dwcdn.net/ePneY/2/"
+      scrolling="no"
+      frameborder="0"
+      style="width: 0; min-width: 100% !important; border: none;"
+      height="562"
+      data-external="1"></iframe>
+
+  <script type="text/javascript">
+    window.addEventListener("message", function(a) {
+      if (void 0 !== a.data["datawrapper-height"]) {
+        var iframes = document.querySelectorAll("iframe");
+        for (var chartId in a.data["datawrapper-height"]) {
+          for (var i = 0; i < iframes.length; i++) {
+            if (iframes[i].contentWindow === a.source) {
+              iframes[i].style.height =
+                a.data["datawrapper-height"][chartId] + "px";
+            }
+          }
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
