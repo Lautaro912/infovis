@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualización de mis datos musicales</title>
+</head>
+
+<body style="font-family: Arial; padding: 20px;">
+
+  <h1 style="text-align:center;">Visualización de mis datos musicales</h1>
+
+
+  <!-- ========== GRÁFICO 1: FLOURISH (Bar Chart Race) ========== -->
+  <h2>¿Cuántos minutos escuché cada banda?</h2>
+
+  <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/26588087">
+    <script src="https://public.flourish.studio/resources/embed.js"></script>
+    <noscript>
+      <img src="https://public.flourish.studio/visualisation/26588087/thumbnail"
+           width="100%"
+           alt="Bar chart race visualization" />
+    </noscript>
+  </div>
+
+
+  <!-- ========== GRÁFICO 2: DATAWRAPPER ========== -->
+  <h2>¿Cuál fue mi promedio durante estos días escuchando música?</h2>
+
+  <iframe title="Relación entre tiempo transcurrido y minutos de escucha"
+          aria-label="Scatter Plot"
+          id="datawrapper-chart-ePneY"
+          src="https://datawrapper.dwcdn.net/ePneY/2/"
+          scrolling="no"
+          frameborder="0"
+          style="width: 0; min-width: 100% !important; border: none;"
+          height="562"
+          data-external="1">
+  </iframe>
+
+  <script type="text/javascript">
+    window.addEventListener("message", function(event) {
+      if (event.data["datawrapper-height"]) {
+        var iframes = document.querySelectorAll("iframe");
+        for (var chartId in event.data["datawrapper-height"]) {
+          for (var i = 0; i < iframes.length; i++) {
+            if (iframes[i].contentWindow === event.source) {
+              iframes[i].style.height = event.data["datawrapper-height"][chartId] + "px";
+            }
+          }
+        }
+      }
+    });
+  </script>
+
+
+  <!-- ========== GRÁFICO 3: RAWGRAPHS (SVG) ========== -->
+  <h2>Mi gráfico realizado en RAWGraphs</h2>
+
+  <!-- OPCIÓN A: si el archivo tiene espacio en el nombre -->
+  <img src="Mi%20musica.svg"
+       alt="Gráfico de RAWGraphs"
+       style="width: 100%; height: auto;">
+
+  <!--
+  OPCIÓN B: si renombraste el archivo (por ejemplo "Mi_musica.svg")
+  <img src="Mi_musica.svg" style="width:100%; height:auto;">
+  -->
+
+</body>
+</html>
