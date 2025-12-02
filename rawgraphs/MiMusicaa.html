@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualización de mis datos musicales</title>
+</head>
+
+<body style="font-family: Arial; padding: 20px;">
+
+  <h1 style="text-align:center;">Visualización de mis datos musicales</h1>
+
+
+  <!-- ========== GRÁFICO 1: FLOURISH (Bar Chart Race) ========== -->
+  <h2>¿Cuál es el artista de Rock Argentino que mas escuche estos días?</h2>
+
+  <p>
+    Este gráfico muestra cómo varió la cantidad total de minutos que escuché a cada artista
+    a lo largo de los últimos días. El artista que más minutos escuche en este período fue
+    <strong>Luis Alberto Spinetta (El capitán Beto)</strong>.
+  </p>
+
+  <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/26588087">
+    <script src="https://public.flourish.studio/resources/embed.js"></script>
+    <noscript>
+      <img src="https://public.flourish.studio/visualisation/26588087/thumbnail"
+           width="100%"
+           alt="Bar chart race visualization" />
+    </noscript>
+  </div>
+
+
+  <!-- ========== GRÁFICO 2: DATAWRAPPER ========== -->
+  <h2>¿Cuál fue mi promedio durante estos días escuchando música?</h2>
+
+  <p>
+    Este gráfico relaciona el tiempo transcurrido con los minutos que escuché música en cada día.
+    Permite observar la tendencia general y calcular un promedio aproximado de escucha diaria.
+  </p>
+
+  <iframe title="Relación entre tiempo transcurrido y minutos de escucha"
+          aria-label="Scatter Plot"
+          id="datawrapper-chart-ePneY"
+          src="https://datawrapper.dwcdn.net/ePneY/2/"
+          scrolling="no"
+          frameborder="0"
+          style="width: 0; min-width: 100% !important; border: none;"
+          height="562"
+          data-external="1">
+  </iframe>
+
+  <script type="text/javascript">
+    window.addEventListener("message", function(event) {
+      if (event.data["datawrapper-height"]) {
+        var iframes = document.querySelectorAll("iframe");
+        for (var chartId in event.data["datawrapper-height"]) {
+          for (var i = 0; i < iframes.length; i++) {
+            if (iframes[i].contentWindow === event.source) {
+              iframes[i].style.height = event.data["datawrapper-height"][chartId] + "px";
+            }
+          }
+        }
+      }
+    });
+  </script>
+
+
+  <!-- ========== GRÁFICO 3: RAWGRAPHS (SVG) ========== -->
+ 
+  <h3>Diagrama generado con RAWGraphs</h3>
+  <p>
+   A corregir, trate de diferenciar mejor con respecto a los artistas que escuche, los lugares.
+  </p>
+
+  <!-- Asegurate de que el archivo SVG esté en el mismo repositorio -->
+  <!-- Si el nombre del archivo tiene espacios se escribe así: Mi%20musica.svg -->
+  <img src="Mi%20musica.svg"
+       alt="Gráfico de RAWGraphs"
+       style="width: 100%; height: auto;">
+
+
+</body>
+</html>
