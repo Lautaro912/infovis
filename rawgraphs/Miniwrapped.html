@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualización de mis datos musicales</title>
+</head>
+
+<body style="font-family: Arial; padding: 20px;">
+
+  <h1 style="text-align:center;">Visualización de mis datos musicales</h1>
+
+
+  <!-- ========================================================= -->
+  <!-- ========== GRÁFICO 1: FLOURISH (Bar Chart Race) ========= -->
+  <!-- ========================================================= -->
+
+  <h2>¿Cuál es el artista de Rock Argentino que más escuché estos días?</h2>
+
+  <p>
+    Este gráfico muestra cómo varió la cantidad total de minutos que escuché a cada artista
+    a lo largo de los últimos días. El artista que más minutos escuché en este período fue
+    <strong>Luis Alberto Spinetta (El Capitán Beto)</strong>.
+  </p>
+
+  <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/26588087">
+    <script src="https://public.flourish.studio/resources/embed.js"></script>
+    <noscript>
+      <img src="https://public.flourish.studio/visualisation/26588087/thumbnail"
+           width="100%"
+           alt="Visualización Bar Chart Race" />
+    </noscript>
+  </div>
+
+
+
+  <!-- ========================================================= -->
+  <!-- ========== GRÁFICO 2: DATAWRAPPER ======================= -->
+  <!-- ========================================================= -->
+
+  <h2>¿Cuál fue mi promedio durante estos días escuchando música?</h2>
+
+  <p>
+    Este gráfico relaciona el tiempo transcurrido con los minutos que escuché música en cada día.
+    Permite observar la tendencia general y calcular un promedio aproximado de escucha diaria.
+  </p>
+
+  <iframe title="Relación entre tiempo transcurrido y minutos de escucha"
+          aria-label="Scatter Plot"
+          id="datawrapper-chart-ePneY"
+          src="https://datawrapper.dwcdn.net/ePneY/2/"
+          scrolling="no"
+          frameborder="0"
+          style="width: 0; min-width: 100% !important; border: none;"
+          height="562"
+          data-external="1">
+  </iframe>
+
+  <script type="text/javascript">
+    window.addEventListener("message", function(event) {
+      if (event.data["datawrapper-height"]) {
+        var iframes = document.querySelectorAll("iframe");
+        for (var chartId in event.data["datawrapper-height"]) {
+          for (var i = 0; i < iframes.length; i++) {
+            if (iframes[i].contentWindow === event.source) {
+              iframes[i].style.height =
+                event.data["datawrapper-height"][chartId] + "px";
+            }
+          }
+        }
+      }
+    });
+  </script>
+
+
+
+  <!-- ========================================================= -->
+  <!-- ========== GRÁFICO 3: RAWGRAPHS (SVG) =================== -->
+  <!-- ========================================================= -->
+
+ 
+  <p>
+    Este diagrama SVG fue generado usando RAWGraphs. Muestra una clasificación general
+    según artistas y lugares, aunque debería ajustar para diferenciar mejor.
+  </p>
+
+  <!-- IMPORTANTE: El archivo SVG debe estar en tu repositorio -->
+  <img src="Mi%20musica.svg"
+       alt="Gráfico generado con RAWGraphs"
+       style="width: 100%; height: auto;">
+
+
+
+  <!-- ========================================================= -->
+  <!-- ========== GRÁFICO 4: TABLEAU PUBLIC ==================== -->
+  <!-- ========================================================= -->
+
+  <h2>Visualización interactiva en Tableau Public</h2>
+
+  
+
+  <div class='tableauPlaceholder' id='viz1764714989005' style='position: relative'>
+    <noscript>
+      <a href='#'>
+        <img alt='Mi consumo musical en noviembre-diciembre 2025'
+             src='https://public.tableau.com/static/images/Mi/MiMusica_17647074881760/Historia1/1_rss.png'
+             style='border: none' />
+      </a>
+    </noscript>
+
+    <object class='tableauViz' style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='MiMusica_17647074881760/Historia1' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image'
+             value='https://public.tableau.com/static/images/Mi/MiMusica_17647074881760/Historia1/1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='es-ES' />
+    </object>
+  </div>
+
+  <script type='text/javascript'>
+    var divElement = document.getElementById('viz1764714989005');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = '100%';
+    vizElement.style.height = '1000px';
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+
+
+</body>
+</html>
