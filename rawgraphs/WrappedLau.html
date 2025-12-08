@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualización de mis datos musicales</title>
+</head>
+
+<body style="font-family: Arial; padding: 20px;">
+
+  <h1 style="text-align:center;">Explorando mis recorridos musicales: artistas, lugares y momentos</h1>
+
+
+  <h2>Rock Argentino </h2>
+
+  <p>
+    Este conjunto de gráficos busca representar 
+    y analizar mis hábitos musicales recientes. 
+    A través de diferentes visualizaciones se muestran tres
+    dimensiones que se van complementando, en principio, los artistas de rock argentino que más escuché 
+    y cantidad de minutos de reproducción, los lugares 
+    y momentos del día en que la música me acompañó, y la relación entre fechas 
+    y espacios de escucha. En conjunto, estas representaciones permiten descubrir patrones, comparar la frecuencia entre cada artista que me gusta su úsica y reconocer cómo se integra en mi vida cotidiana.
+  </p>
+
+  <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/26685398">
+    <script src="https://public.flourish.studio/resources/embed.js"></script>
+    <noscript>
+      <img src="https://public.flourish.studio/visualisation/26685398/thumbnail"
+           width="100%"
+           alt="Bar Chart Race" />
+    </noscript>
+  </div>
+
+
+  
+  
+
+  <iframe title="Relación entre tiempo transcurrido y minutos de escucha"
+          aria-label="Scatter Plot"
+          id="datawrapper-chart-ePneY"
+          src="https://datawrapper.dwcdn.net/ePneY/3/"
+          scrolling="no"
+          frameborder="0"
+          style="width: 0; min-width: 100% !important; border: none;"
+          height="646"
+          data-external="1">
+  </iframe>
+
+  <script type="text/javascript">
+    window.addEventListener("message", function(a) {
+      if (a.data["datawrapper-height"] !== undefined) {
+        var iframes = document.querySelectorAll("iframe");
+        for (var chartId in a.data["datawrapper-height"]) {
+          for (var i = 0; i < iframes.length; i++) {
+            if (iframes[i].contentWindow === a.source) {
+              iframes[i].style.height =
+                a.data["datawrapper-height"][chartId] + "px";
+            }
+          }
+        }
+      }
+    });
+  </script>
+
+
+
+  <h2>¿Dónde y cuándo escuché mis minutos de música?</h2>
+
+  <p>
+    Aquí se representan mis recorridos musicales: cada día conecta con los lugares donde estuve escuchando canciones. El gráfico muestra cómo mi música me acompaña en la casa, el auto, la facultad o incluso el bar, mostrando la variedad de lugares en los que disfruto de ella.
+  </p>
+
+  <object data="Musica.svg"
+          type="image/svg+xml"
+          style="width:100%; height:auto;">
+  </object>
