@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualización de mis datos musicales</title>
+</head>
+
+<body style="font-family: Arial; padding: 20px;">
+
+  <h1 style="text-align:center;">Explorando mis recorridos musicales: artistas, lugares y momentos</h1>
+
+  <h2>Rock Argentino</h2>
+
+  <p>
+    Este conjunto de gráficos busca representar 
+    y analizar mis hábitos musicales recientes. 
+    A través de diferentes visualizaciones se muestran tres
+    dimensiones que se van complementando, en principio, los artistas de rock argentino que más escuché 
+    y cantidad de minutos de reproducción, los lugares 
+    y momentos del día en que la música me acompañó, y la relación entre fechas 
+    y espacios de escucha. En conjunto, estas representaciones permiten descubrir patrones, comparar la frecuencia entre cada artista que me gusta su música y reconocer cómo se integra en mi vida cotidiana.
+  </p>
+
+  <!-- FLOURISH -->
+  <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/26685398" style="margin-bottom:40px;">
+    <script src="https://public.flourish.studio/resources/embed.js"></script>
+  </div>
+
+  <!-- ⭐ NUEVO PRIMER TABLEAU (ACTUALIZADO) ⭐ -->
+  <div class='tableauPlaceholder' id='viz1765341956202' style='position: relative; margin-bottom:40px;'>
+    <noscript>
+      <a href='#'><img alt='Distribución de minutos durante los dias'
+        src='https://public.tableau.com/static/images/Ar/Artistas_17653358767150/Hoja3/1_rss.png'
+        style='border: none' /></a>
+    </noscript>
+    <object class='tableauViz' style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='Artistas_17653358767150/Hoja3' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image' value='https://public.tableau.com/static/images/Ar/Artistas_17653358767150/Hoja3/1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='es-ES' />
+    </object>
+  </div>
+
+  <script type='text/javascript'>
+    var divElement = document.getElementById('viz1765341956202');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width='100%';
+    vizElement.style.height=(divElement.offsetWidth*0.55)+'px';  // MÁS CHICO
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+
+  <!-- DATAWRAPPER -->
+  <iframe title="Relación entre tiempo transcurrido y minutos de escucha"
+          aria-label="Scatter Plot"
+          id="datawrapper-chart-ePneY"
+          src="https://datawrapper.dwcdn.net/ePneY/3/"
+          scrolling="no"
+          frameborder="0"
+          style="width: 0; min-width: 100% !important; border: none; margin-bottom:40px;"
+          height="646" data-external="1">
+  </iframe>
+
+  <script>
+    window.addEventListener("message", function(a) {
+      if (a.data["datawrapper-height"] !== undefined) {
+        var iframes = document.querySelectorAll("iframe");
+        for (var chartId in a.data["datawrapper-height"]) {
+          for (var i = 0; i < iframes.length; i++) {
+            if (iframes[i].contentWindow === a.source) {
+              iframes[i].style.height = a.data["datawrapper-height"][chartId] + "px";
+            }
+          }
+        }
+      }
+    });
+  </script>
+
+  <!-- SEGUNDO TABLEAU -->
+  <div class='tableauPlaceholder' id='viz1765341019172' style='position: relative; margin-bottom:40px;'>
+    <noscript><a href='#'><img alt='Pero... ¿ En donde? ¿ En qué momento del día?'
+      src='https://public.tableau.com/static/images/Te/Tendencia_17653384464440/Hoja2/1_rss.png'
+      style='border: none' /></a></noscript>
+    <object class='tableauViz' style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='Tendencia_17653384464440/Hoja2' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image'
+        value='https://public.tableau.com/static/images/Te/Tendencia_17653384464440/Hoja2/1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='es-ES' />
+    </object>
+  </div>
+
+  <script>
+    var d2 = document.getElementById('viz1765341019172');
+    var o2 = d2.getElementsByTagName('object')[0];
+    o2.style.width = '100%';
+    o2.style.height = (d2.offsetWidth * 0.55) + 'px'; /* MÁS CHICO */
+    var s2 = document.createElement('script');
+    s2.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    o2.parentNode.insertBefore(s2, o2);
+  </script>
+
+  <h2>¿Dónde y cuándo escuché mis minutos de música?</h2>
+
+  <p>
+    Aquí se representan mis recorridos musicales: cada día conecta con los lugares donde estuve escuchando canciones.
+  </p>
+
+  <!-- SVG RAWGRAPHS -->
+  <object data="Musica.svg" type="image/svg+xml" style="width:100%; height:auto; margin-bottom:40px;"></object>
+
+  <!-- TERCER TABLEAU -->
+  <div class='tableauPlaceholder' id='viz1765341055662' style='position: relative; margin-bottom:40px;'>
+    <noscript><a href='#'><img alt='Dashboard 1'
+      src='https://public.tableau.com/static/images/Mo/Momento/Dashboard1/1_rss.png'
+      style='border: none' /></a></noscript>
+    <object class='tableauViz' style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='Momento/Dashboard1' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image'
+        value='https://public.tableau.com/static/images/Mo/Momento/Dashboard1/1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='es-ES' />
+    </object>
+  </div>
+
+  <script>
+    var d3 = document.getElementById('viz1765341055662');
+    var o3 = d3.getElementsByTagName('object')[0];
+    o3.style.width = '100%';
+    o3.style.height = (d3.offsetWidth * 0.55) + 'px'; /* MÁS CHICO */
+    var s3 = document.createElement('script');
+    s3.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    o3.parentNode.insertBefore(s3, o3);
+  </script>
+
+</body>
